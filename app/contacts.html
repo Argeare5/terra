@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Жилой комплекс - Terra</title>
+  <meta property="og:title" content="Жилой комплекс - «Terra»">
+
+  <meta name="description" content="Жилой комплекс «Terra» от ГК «Росстройинвест»">
+  <meta property="og:description" content="Жилой комплекс «Terra» от ГК «Росстройинвест»">
+  <meta property="og:image" content="http://time.spb.ru/offer/img/favicon.ico" />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Template Basic Images Start -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Template Basic Images End -->
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCqdAPjl6IS0VnKDv6wJNmV-4liotk3RKI&extension=.js&language=ru"></script>
+
+</head>
+
+<body id="body" class="drawer drawer--left">
+
+  <header class="header" id="header">
+    <div class="container">
+      <div role="banner" class="mobile-menu">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav" role="navigation">
+          <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="index.html">О проекте</a></li>
+            <li><a class="drawer-menu-item" href="apartments.html">Корпуса в продаже</a></li>
+            <li><a class="drawer-menu-item" href="gallery.html">Галерея</a></li>
+            <li><a class="drawer-menu-item" href="apartments.html#planing">Квартиры</a></li>
+            <li><a class="drawer-menu-item" href="advantages.html">Преимущества</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__logo-inner">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="./img/logo.svg" alt="Terra">
+          </a>
+        </div>
+      </div>
+      <div class="header__menu-inner">
+        <nav class="header__menu">
+          <ul>
+            <li><a href="index.html">О проекте</a></li>
+            <li><a href="apartments.html">Корпуса в продаже</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="apartments.html#planing">Квартиры</a></li>
+            <li><a href="advantages.html">Преимущества</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__contacts-inner">
+        <a href="tel:3315000">331-50-00</a>
+        <a href="#" class="callback-phone">
+          <img src="./img/phoneIcon.svg" alt="Terra">
+          <span>Заказать звонок</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main" class="main">
+    <section class="contacts">
+      <div class="map-inner">
+        <div id="map" class="map"></div>
+      </div>
+
+      <div class="right-inner">
+        <div class="image-inner">
+        </div>
+        <div class="caption">
+          <h2>Контакты</h2>
+        </div>
+
+        <div class="bottom-info">
+          <div class="text-inner">
+            <div class="adress-info">
+              <p>Приморский район, ул. Земледельческая, дом 3, лит. А, Б</p>
+            </div>
+            <div class="contact-info__inner">
+              <h4>Отдел продаж:</h4>
+              <div class="contact-info">
+                <a href="tel:8(812)3315000">8 (812) 331-50-00</a>
+                <br>
+                <a href="mailto:landing@rsti.ru">landing@rsti.ru</a>
+              </div>
+            </div>
+          </div>
+          <form class="full-form">
+            <div class="success"><span>Спасибо, мы с вами обязательно свяжемся!</span></div>
+
+            <div class="inputs-inner">
+              <div class="input-inner">
+                <input type="text" name="name" id="name" required>
+                <label for="name">Имя</label>
+              </div>
+              <div class="input-inner">
+                <input type="tel" name="phone" id="phone" required>
+                <label for="phone">Телефон</label>
+              </div>
+
+              <div class="checkbox-inner">
+                <input type="checkbox" id="checkbox" required>
+                <label for="checkbox">Я согласен на обработку персональных данных.</label>
+              </div>
+            </div>
+
+            <button type="submit" class="but waves-effect waves-green">
+              <span>Получите персональное <br> предложение на квартиру</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="ross-advantages" id="ross-advantages">
+      <div class="container">
+        <h2>Квартиры от надежного застройщика</h2>
+      </div>
+      <div class="container">
+        <div class="ross-advantages__content-inner">
+          <div class="logo-inner">
+            <a href="#"><img src="./img/rossLogo.svg" alt="Terra"></a>
+            <p>17 лет на рынке — 100% домов в срок</p>
+          </div>
+          <div class="text-inner">
+            <ul>
+              <li>«РосСтройИнвест» — ведущая российская строительная компания, которая реализует собственные инвестиционно-строительные проекты, а также успешно работает в рамках государственных контрактов. В группу компаний входит 11 предприятий, способных выполнять весь спектр строительных работ.</li>
+              <li>Более 1 450 000 м2 сдано; более 950 000 м<sup>2</sup> в стройке</li>
+              <li>Более 9 000 счастливых семей уже живут в наших домах</li>
+              <li>ГК «РосСтройИнвест» входит в реестр надёжных застройщиков Администрации Санкт-Петербурга и Администрации Ленинградской области</li>
+              <li>Подробнее о проектах компании смотрите на корпоративном сайте <a href="http://rsti.ru/" target="_blank">www.rsti.ru</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__top-line">
+          <div class="logo-inner">
+            <a href="index.html">
+              <img src="./img/logo.svg" alt="Terra">
+            </a>
+          </div>
+          <div class="center-inner">
+            <p>Используемые рендеры являются ознакомительными и носят рекламный характер.</p>
+            <p>Застройщик оставляет за собой право вносить корректировки в цветовую палитру и общую концепцию, менять марки производителей материалов и оборудования, если иное не указано в договоре реализации квартир.</p>
+            <p>Не является публичной офертой.</p>
+            <p> Документация о проекте размещена на сайте <a href="http://www.rsti-terra.ru/" target="_blank">rsti-terra.ru</a></p>
+            <a href="http://rsti.ru/assets/policy/rsti.pdf" target="_blank">Политика обработки и защиты персональных данных</a>
+          </div>
+          <div class="right-inner">
+            <img class="logo" src="./img/rossLogo.svg" alt="Terra">
+            <br>
+            <a class="phone" href="tel:3315000">331-50-00</a>
+          </div>
+        </div>
+      </div>
+      <nav class="footer-menu" id="footer-menu">
+        <ul>
+          <li><a href="apartments.html#planing">Выбрать квартиру</a></li>
+          <li><a href="advantages.html#advantagesGallery">Квартиры с отделкой</a></li>
+          <li><a href="index.html#scheme">Посмотреть карту</a></li>
+          <li><a href="index.html#advantages">Опции проекта</a></li>
+          <li class="active"><a class="menuScroll" href="#body">Контакты</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </main>
+
+  <div class="toTop" id="toTop">
+    <a href="#body" id="inTop">
+      <div class="circle"></div>
+      <p>Наверх</p>
+    </a>
+  </div>
+
+  <script src="js/scripts.min.js"></script>
+  <script>
+    // google map Api
+    google.maps.event.addDomListener(window, 'load', init);
+    var map, markersArray = [];
+    function bindInfoWindow(marker, map, location) {
+      google.maps.event.addListener(marker, 'click', function() {
+        function close(location) {
+          location.ib.close();
+          location.infoWindowVisible = false;
+          location.ib = null;
+        }
+        if (location.infoWindowVisible === true) {
+          close(location);
+        } else {
+          markersArray.forEach(function(loc, index) {
+            if (loc.ib && loc.ib !== null) {
+              close(loc);
+            }
+          });
+          var boxText = document.createElement('div');
+          boxText.style.cssText = 'background: #fff;';
+          boxText.classList.add('md-whiteframe-2dp');
+
+          function buildPieces(location, el, part, icon) {
+            if (location[part] === '') {
+              return '';
+            } else if (location.iw[part]) {
+              switch (el) {
+                case 'photo':
+                  if (location.photo) {
+                    return '<div class="iw-photo" style="background-image: url(' + location.photo + ');"></div>';
+                  } else {
+                    return '';
+                  }
+                  break;
+                case 'iw-toolbar':
+                  return '<div class="iw-toolbar"><h3 class="md-subhead">' + location.title + '</h3></div>';
+                  break;
+                case 'div':
+                  switch (part) {
+                    case 'email':
+                      return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="mailto:' + location.email + '" target="_blank">' + location.email + '</a></span></div>'
+                      break;
+                    case 'web':
+                      return '<div class="iw-details"><i class="material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span><a href="' + location.web + '" target="_blank">' + location.web_formatted + '</a></span></div>';
+                      break;
+                    case 'desc':
+                      return '<label class="iw-desc" for="cb_details"><input type="checkbox" id="cb_details"/><h3 class="iw-x-details">Details</h3><i class="material-icons toggle-open-details"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><p class="iw-x-details">' + location.desc + '</p></label>';
+                      break;
+                    default:
+                      return '<div class="iw-details"><i class="material-icons"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><span>' + location.part + '</span></div>';
+                      break;
+                  }
+                  break;
+                case 'open_hours':
+                  var items = '';
+                  if (location.open_hours.length > 0) {
+                    for (var i = 0; i < location.open_hours.length; ++i) {
+                      if (i !== 0) {
+                        items += '<li><strong>' + location.open_hours[i].day + '</strong><strong>' + location.open_hours[i].hours + '</strong></li>';
+                      }
+                      var first = '<li><label for="cb_hours"><input type="checkbox" id="cb_hours"/><strong>location.open_hours[0].day</strong><strong>' + location.open_hours[0].hours + '</strong><i class="material-icons toggle-open-hours"><img src="//cdn.mapkit.io/v1/icons/keyboard_arrow_down.svg"/></i><ul>' + items + '</ul></label></li>';
+                    }
+                    return '<div class="iw-list"><i class="material-icons first-material-icons" style="color:#4285f4;"><img src="//cdn.mapkit.io/v1/icons/' + icon + '.svg"/></i><ul>' + first + '</ul></div>';
+                  } else {
+                    return '';
+                  }
+                  break;
+              }
+            } else {
+              return '';
+            }
+          }
+          boxText.innerHTML = buildPieces(location, 'photo', 'photo', '') + buildPieces(location, 'iw-toolbar', 'title', '') + buildPieces(location, 'div', 'address', 'location_on') + buildPieces(location, 'div', 'web', 'public') + buildPieces(location, 'div', 'email', 'email') + buildPieces(location, 'div', 'tel', 'phone') + buildPieces(location, 'div', 'int_tel', 'phone') + buildPieces(location, 'open_hours', 'open_hours', 'access_time') + buildPieces(location, 'div', 'desc', 'keyboard_arrow_down');
+          var myOptions = {
+            alignBottom: true,
+            content: boxText,
+            disableAutoPan: true,
+            maxWidth: 0,
+            pixelOffset: new google.maps.Size(-140, -40),
+            zIndex: null,
+            boxStyle: {
+              opacity: 1,
+              width: '280px'
+            },
+            closeBoxMargin: '0px 0px 0px 0px',
+            infoBoxClearance: new google.maps.Size(1, 1),
+            isHidden: false,
+            pane: 'floatPane',
+            enableEventPropagation: false
+          };
+          location.ib = new InfoBox(myOptions);
+          location.ib.open(map, marker);
+          location.infoWindowVisible = true;
+        }
+      });
+    }
+
+    function init() {
+      var mapOptions = {
+        center: new google.maps.LatLng(59.99090599999999, 30.326018100000056),
+        zoom: 14,gestureHandling: 'auto',fullscreenControl: false,zoomControl: false,
+        disableDoubleClickZoom: false,
+
+        mapTypeControl: false,
+
+        scaleControl: false,
+        scrollwheel: true,
+        streetViewControl: false,
+        draggable: true,
+        clickableIcons: false,
+        fullscreenControlOptions: {
+          position: google.maps.ControlPosition.TOP_RIGHT
+        },
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.RIGHT_BOTTOM
+        },
+        streetViewControlOptions: {
+          position: google.maps.ControlPosition.RIGHT_BOTTOM
+        },
+        mapTypeControlOptions: {
+          position: google.maps.ControlPosition.TOP_LEFT
+        },
+
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+      }
+      var mapElement = document.getElementById('map');
+      var map = new google.maps.Map(mapElement, mapOptions);
+      var locations = [{"title":"ЖК Terra","address":"Санкт Петербург, Россия","desc":"","tel":"","int_tel":"","email":"","web":"","web_formatted":"","open":"","time":"","lat":59.99090599999999,"lng":30.326018100000056,"vicinity":"Saint Petersburg","marker":{"fillColor":"#F44336","fillOpacity":1,"strokeWeight":0,"scale":1.5,"path":"M10.2,2.5v4.2c0,0,0,0,0,0L10.2,2.5c-6,0-10.9,4.9-10.9,10.9s10.9,23.8,10.9,23.8v0c0,0,10.9-17.8,10.9-23.8 S16.2,2.5,10.2,2.5z M10.2,17.9c-2.5,0-4.6-2.1-4.6-4.6s2.1-4.6,4.6-4.6s4.6,2.1,4.6,4.6S12.8,17.9,10.2,17.9z M16.8,14.1 c0-0.2,0-0.3,0-0.5C16.9,13.8,16.9,14,16.8,14.1z","anchor":{"x":10,"y":30},"origin":{"x":0,"y":0},"style":5},"iw":{"address":true,"desc":true,"email":true,"enable":true,"int_tel":true,"open":true,"open_hours":true,"photo":true,"tel":true,"title":true,"web":true}}];
+
+      for (i = 0; i < locations.length; i++) {
+        marker = new google.maps.Marker({
+          icon: './img/mapIcon.png',
+          position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+          map: map,
+          title: locations[i].title,
+          address: locations[i].address,
+          desc: locations[i].desc,
+          tel: locations[i].tel,
+          int_tel: locations[i].int_tel,
+          vicinity: locations[i].vicinity,
+          open: locations[i].open,
+          open_hours: locations[i].open_hours,
+          photo: locations[i].photo,
+          time: locations[i].time,
+          email: locations[i].email,
+          web: locations[i].web,
+          iw: locations[i].iw
+        });
+
+        markersArray.push(marker);
+
+        if (locations[i].iw.enable === true){
+          bindInfoWindow(marker, map, locations[i]);
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+.contacts
+  min-height: 900px
+  height: calc(100vh - 87px)
+  overflow: hidden
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: rem(60px)
+  @include respond-to(lg)
+    min-height: 600px
+    height: calc(100vh - 57px)
+  @include respond-to(md)
+    height: auto
+    min-height: 100px
+  .map-inner
+    width: 55%
+    position: relative
+    height: 100%
+    @include respond-to(md)
+      order: 0
+      padding: 0
+      width: 100%
+      min-height: 600px
+      @include respond-to(sm)
+        min-height: 400px
+      @include respond-to(xs)
+        min-height: 250px
+    .map
+      height: 100%
+      position: absolute
+      right: 0
+      width: 55vw
+      @include respond-to(md)
+        width: 100%
+  .right-inner
+    width: 45%
+    @include respond-to(md)
+      width: 100%
+  .caption
+    padding: 30px 50px 1px
+    position: relative
+    z-index: 2
+    @include respond-to(lg)
+      padding: 25px 30px 1px
+    @include respond-to(md)
+      text-align: center
+      padding: rem(50px 0 0 0)
+    h2
+      line-height: 1
+      @include respond-to(md)
+        margin-bottom: rem(5px)
+  .bottom-info
+    background: #fff
+    padding: 25px 50px
+    @include respond-to(lg)
+      padding: 15px 30px
+    @include respond-to(md)
+      padding: rem(20px)
+      width: 100%
+      text-align: center
+    @include respond-to(sm)
+      padding: 30px 10px
+  .text-inner
+    .adress-info
+      margin-bottom: 30px
+      @include respond-to(lg)
+        margin-bottom: 20px
+    .contact-info__inner
+      margin-bottom: 30px
+      @include respond-to(lg)
+        margin-bottom: 15px
+      @include respond-to(md)
+        margin-bottom: 20px
+      h4
+        text-transform: uppercase
+        font-weight: 400
+        margin-bottom: 10px
+      a
+        margin-bottom: 2px

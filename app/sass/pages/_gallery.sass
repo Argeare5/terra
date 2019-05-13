@@ -1,0 +1,112 @@
+@import "../vars"
+@import "../_mixins/screen-size"
+@import "../_mixins/rem"
+
+.pageGallery
+  margin-bottom: rem(80px)
+  overflow: hidden
+  display: flex
+  &__small-slider, &__big-slider
+    .item
+      outline: none
+      min-height: 860px
+      position: relative
+      height: calc(100vh - 100px)
+      @include respond-to(lg)
+        min-height: 550px
+        height: calc(100vh - 70px)
+      @include respond-to(md)
+        height: 600px
+        min-height: 100%
+      @include respond-to(sm)
+        height: 460px
+      @include respond-to(xs)
+        height: 360px
+      img
+        object-fit: cover
+        height: 100%
+        width: 100%
+  &__small-slider
+    width: 15%
+    @include respond-to(md)
+      width: 10%
+    @include respond-to(xs)
+      width: 5%
+    .item
+      &:after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background: rgba(#fff, .4)
+        @extend .trans
+      img
+        object-fit: cover
+        height: 100%
+        width: 100%
+        filter: grayscale(1)
+        @extend .trans
+  &__small-right
+    width: calc(15% + 2px)
+    position: relative
+    right: 2px
+  &__big-slider-inner
+    width: 70%
+    position: relative
+    @include respond-to(md)
+      width: 80%
+    @include respond-to(xs)
+      width: 90%
+    .caption
+      h2
+        position: absolute
+        z-index: 2
+        font-size: rem(110px)
+        color: #fff
+        bottom: 0
+        left: rem(-11px)
+        line-height: .15
+        @include respond-to(sm)
+          font-size: 34px
+          left: -3px
+          bottom: -9px
+    .slick-dots
+      position: absolute
+      bottom: rem(30px)
+      right: rem(50px)
+      @include respond-to(xs)
+        bottom: auto
+        right: auto
+        top: 10px
+        left: 49.9%
+        transform: translateX(-50.1%)
+        width: 100%
+        text-align: center
+      li
+        display: inline-block
+        margin: rem(0 0 0 25px)
+        button
+          font-size: 0
+          width: rem(12px)
+          height: rem(12px)
+          border-radius: 50%
+          border: 1px solid #fff
+      .slick-active
+        button
+          background: #fff
+    .slick-arrow
+      width: rem(55px)
+      height: rem(55px)
+      &:after
+        padding: rem(8px)
+    .slick-prev
+      display: block !important
+      left: rem(-27px)
+      &:after
+        left: 2px
+    .slick-next
+      right: rem(-27px)
+      &:after
+        right: 2px
